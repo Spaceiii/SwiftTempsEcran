@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3935052D647EB4003D9AEC /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3935042D647EB4003D9AEC /* TimeModel.swift */; };
 		ECEC4F2C2D5B2F240084A978 /* SwiftTempsEcranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC4F2B2D5B2F240084A978 /* SwiftTempsEcranApp.swift */; };
 		ECEC4F2E2D5B2F240084A978 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC4F2D2D5B2F240084A978 /* ContentView.swift */; };
 		ECEC4F302D5B2F260084A978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEC4F2F2D5B2F260084A978 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3935042D647EB4003D9AEC /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		ECEC4F282D5B2F240084A978 /* SwiftTempsEcran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTempsEcran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEC4F2B2D5B2F240084A978 /* SwiftTempsEcranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTempsEcranApp.swift; sourceTree = "<group>"; };
 		ECEC4F2D2D5B2F240084A978 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC3935032D647E54003D9AEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC3935042D647EB4003D9AEC /* TimeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ECEC4F1F2D5B2F240084A978 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +62,7 @@
 		ECEC4F2A2D5B2F240084A978 /* SwiftTempsEcran */ = {
 			isa = PBXGroup;
 			children = (
+				EC3935032D647E54003D9AEC /* Models */,
 				ECEC4F2B2D5B2F240084A978 /* SwiftTempsEcranApp.swift */,
 				ECEC4F2D2D5B2F240084A978 /* ContentView.swift */,
 				ECEC4F2F2D5B2F260084A978 /* Assets.xcassets */,
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECEC4F2E2D5B2F240084A978 /* ContentView.swift in Sources */,
+				EC3935052D647EB4003D9AEC /* TimeModel.swift in Sources */,
 				ECEC4F2C2D5B2F240084A978 /* SwiftTempsEcranApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 
 ## Doit inclure :
 
-- Catégories d'applications
+- Catégories d'applications (RS, jeux, sport, musique, divertissement)
 - Liste d'application avec temps limite
 - Graphique avec le temps restant pour chaque application
 
@@ -12,4 +12,5 @@
 - Temps comparé à la semaine derrière
 - Modif de la limite
 - Mode sommeil
-
+- Mode exclusion application
+- Application temps minimal (sport, hobby)
