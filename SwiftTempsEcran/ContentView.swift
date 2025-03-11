@@ -10,19 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         // TODO: change app name
-        Text("Nom Appli")
+        Text("Madness Guardian")
         TabView {
-            Text("test")
+            HomeView()
                 .tabItem {
                     Image(systemName: "timer")
                     Text("Mes temps d'écran")
                 }
-            Text("Test 2")
+            ExcludeView()
                 .tabItem {
                     Image(systemName: "xmark.circle")
                     Text("Apps Exclues")
                 }
-            Text("Testeu")
+            Text("TODO !")
                 .tabItem {
                     Image(systemName: "moon.stars")
                     Text("Sommeil")
@@ -33,4 +33,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(AppViewModel())
 }
