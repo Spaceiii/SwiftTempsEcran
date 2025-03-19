@@ -11,9 +11,13 @@ struct HomeView: View {
     @EnvironmentObject var appVM: AppViewModel
     
     var body: some View {
-        List {
-            ForEach(appVM.getActiveApps()) { app in
-                RowView(app: app)
+        NavigationView {
+            List {
+                ForEach(appVM.getActiveApps()) { app in
+                    NavigationLink(destination: DetailsView(app: app)) {
+                        RowView(app: app)
+                    }
+                }
             }
         }
     }

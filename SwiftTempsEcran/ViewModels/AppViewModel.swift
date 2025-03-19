@@ -25,4 +25,12 @@ class AppViewModel: ObservableObject {
     func getExcludeApps() -> [AppModel] {
         return self.apps.filter({ $0.exclude })
     }
+    
+    func toggleExclude(app: AppModel) {
+        for (index, a) in apps.enumerated() {
+            if a.id == app.id {
+                self.apps[index].exclude.toggle()
+            }
+        }
+    }
 }

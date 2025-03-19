@@ -30,6 +30,5 @@ struct AppModel: Identifiable {
         AppModel(name: "Youtube", icon: "youtube", useTime: 3.5, maxTime: 5, category: .divertissement),
         AppModel(name: "Banque", icon: "bank", useTime: 0.2, maxTime: 10, category: .essentiel),
         AppModel(name: "Tiktok", icon: "tiktok", useTime: 10, maxTime: 10, category: .rs, exclude: true),
-        
     ]
 }

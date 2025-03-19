@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        // TODO: change app name
         Text("Madness Guardian")
         TabView {
             HomeView()

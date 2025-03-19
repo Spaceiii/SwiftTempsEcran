@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECE2D7972D8ABE7C00E822E8 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2D7962D8ABE7C00E822E8 /* DetailsView.swift */; };
 		ECEC4F2C2D5B2F240084A978 /* SwiftTempsEcranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC4F2B2D5B2F240084A978 /* SwiftTempsEcranApp.swift */; };
 		ECEC4F2E2D5B2F240084A978 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC4F2D2D5B2F240084A978 /* ContentView.swift */; };
 		ECEC4F302D5B2F260084A978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEC4F2F2D5B2F260084A978 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECE2D7962D8ABE7C00E822E8 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		ECEC4F282D5B2F240084A978 /* SwiftTempsEcran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTempsEcran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEC4F2B2D5B2F240084A978 /* SwiftTempsEcranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTempsEcranApp.swift; sourceTree = "<group>"; };
 		ECEC4F2D2D5B2F240084A978 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				ECF4A2CC2D801E9500BF5D69 /* HomeView.swift */,
 				ECF4A2CE2D801FB900BF5D69 /* RowView.swift */,
 				ECF4A2D02D802BC900BF5D69 /* ExcludeView.swift */,
+				ECE2D7962D8ABE7C00E822E8 /* DetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				ECEC4F2C2D5B2F240084A978 /* SwiftTempsEcranApp.swift in Sources */,
 				ECF4A2D12D802BC900BF5D69 /* ExcludeView.swift in Sources */,
 				ECF4A2CA2D801C8D00BF5D69 /* AppViewModel.swift in Sources */,
+				ECE2D7972D8ABE7C00E822E8 /* DetailsView.swift in Sources */,
 				ECF4A2CD2D801E9500BF5D69 /* HomeView.swift in Sources */,
 				ECF4A2C72D80191100BF5D69 /* AppModel.swift in Sources */,
 			);

@@ -11,9 +11,13 @@ struct ExcludeView: View {
     @EnvironmentObject var appVM: AppViewModel
     
     var body: some View {
-        List {
-            ForEach(appVM.getExcludeApps()) { app in
-                RowView(app: app)
+        NavigationView {
+            List {
+                ForEach(appVM.getExcludeApps()) { app in
+                    NavigationLink(destination: DetailsView(app: app)) {
+                        RowView(app: app)
+                    }
+                }
             }
         }
     }
