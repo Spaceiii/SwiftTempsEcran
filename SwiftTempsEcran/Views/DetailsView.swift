@@ -12,20 +12,34 @@ struct DetailsView: View {
     @EnvironmentObject var appVM: AppViewModel
     @State var app: AppModel
     
-    var data: [(date: String, time: Int)] = []
+    var appUseTime: [(date: String, time: Double)] = []
+    let linearGradient = LinearGradient(
+        gradient: Gradient(colors: [Color.accentColor.opacity(0.4), Color.accentColor.opacity(0)]),
+        startPoint: .top,
+        endPoint: .bottom
+    )
     
     init(app: AppModel) {
         self.app = app
-        for count in 0...4 {
-            self.data[count] = (
-                
-            )
+        var maxData: Double = 0
+        let nbPoints: Int = 20
+        for count in 0..<nbPoints {
+            let formula: Double = count == 0 ? 1/Double(nbPoints) : Double(count)/Double(nbPoints)
+            let time: Double = Double.random(in: Double(maxData)..<(app.useTime*formula))
+            maxData = time
+            self.appUseTime.append((
+                date: String(count),
+                time: time
+            ))
         }
+        self.appUseTime.append((
+            date: String(nbPoints),
+            time: app.useTime
+        ))
     }
     
     var body: some View {
         Spacer()
-        
         
         Image(app.icon)
             .resizable()
@@ -52,9 +66,28 @@ struct DetailsView: View {
         // random * 5, chaque random entre temps max et random précédent
         
         Text("test")
-        Chart {
-            AreaMark(x: <#T##PlottableValue<Plottable>#>, y: <#T##PlottableValue<Plottable>#>)
+        Chart(appUseTime, id: \.date) { appTime in
+            LineMark(
+                x: .value("Date", appTime.date),
+                y: .value("Time", appTime.time)
+            )
+            .interpolationMethod(.cardinal)
+            
+            PointMark(
+                x: .value("Date", appTime.date),
+                y: .value("Time", appTime.time)
+            )
+            .symbol(.diamond)
+            
+            AreaMark(
+                x: .value("Date", appTime.date),
+                y: .value("Time", appTime.time)
+            )
+            .foregroundStyle(linearGradient)
         }
+        .chartYScale(domain: 0...app.maxTime)
+        .frame(height: 200)
+        .padding(.horizontal, 20)
         
         Spacer()
     }

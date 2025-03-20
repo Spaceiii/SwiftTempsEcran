@@ -21,11 +21,17 @@ struct ContentView: View {
                     Image(systemName: "xmark.circle")
                     Text("Apps Exclues")
                 }
-            Text("TODO !")
-                .tabItem {
-                    Image(systemName: "moon.stars")
-                    Text("Sommeil")
-                }
+            VStack {
+                Image(systemName: "moon.zzz.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100)
+                Text("Cette partie est en cours de construction")
+            }
+            .tabItem {
+                Image(systemName: "moon.stars")
+                Text("Sommeil")
+            }
         }
     }
 }
